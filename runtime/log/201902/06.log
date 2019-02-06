@@ -1,0 +1,440 @@
+---------------------------------------------------------------
+[ 2019-02-06T09:57:08+08:00 ] 127.0.0.1 GET 127.0.0.1/public/index.php/admin/admin/edit
+[运行时间：0.124007s] [吞吐率：8.06req/s] [内存消耗：1,828.00kb] [文件加载：46]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit[ F:\Programme\GitHub\Personal-Blog\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] F:\Programme\GitHub\Personal-Blog\public/../application/admin\view\admin\edit.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:08+08:00 ] 127.0.0.1 GET 127.0.0.1/public/index.php/admin/admin/images/logo.png
+[运行时间：0.133008s] [吞吐率：7.52req/s] [内存消耗：1,661.15kb] [文件加载：46]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/public/index.php/admin/admin/edit',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:09+08:00 ] 127.0.0.1 GET 127.0.0.1/public/index.php/admin/admin/images/adam-jansen.jpg
+[运行时间：0.141008s] [吞吐率：7.09req/s] [内存消耗：1,661.17kb] [文件加载：46]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/public/index.php/admin/admin/edit',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:09+08:00 ] 127.0.0.1 GET 127.0.0.1/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[运行时间：0.108006s] [吞吐率：9.26req/s] [内存消耗：1,379.29kb] [文件加载：38]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:23+08:00 ] 127.0.0.1 GET 127.0.0.1/public/index.php/admin/admin/lst
+[运行时间：0.088005s] [吞吐率：11.36req/s] [内存消耗：1,780.51kb] [文件加载：46]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->lst[ F:\Programme\GitHub\Personal-Blog\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] F:\Programme\GitHub\Personal-Blog\public/../application/admin\view\admin\lst.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:24+08:00 ] 127.0.0.1 GET 127.0.0.1/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[运行时间：0.089005s] [吞吐率：11.24req/s] [内存消耗：1,379.29kb] [文件加载：38]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:27+08:00 ] 127.0.0.1 GET 127.0.0.1/public/admin/admin/lst.html
+[运行时间：0.112006s] [吞吐率：8.93req/s] [内存消耗：1,627.23kb] [文件加载：44]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/public/index.php/admin/admin/lst',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->lst[ F:\Programme\GitHub\Personal-Blog\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] F:\Programme\GitHub\Personal-Blog\public/../application/admin\view\admin\lst.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:28+08:00 ] 127.0.0.1 GET 127.0.0.1/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[运行时间：0.109006s] [吞吐率：9.17req/s] [内存消耗：1,379.29kb] [文件加载：38]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:35+08:00 ] 127.0.0.1 GET 127.0.0.1/public/index.php/admin/admin/add
+[运行时间：0.086005s] [吞吐率：11.63req/s] [内存消耗：1,777.54kb] [文件加载：46]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->add[ F:\Programme\GitHub\Personal-Blog\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] F:\Programme\GitHub\Personal-Blog\public/../application/admin\view\admin\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:36+08:00 ] 127.0.0.1 GET 127.0.0.1/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[运行时间：0.073005s] [吞吐率：13.70req/s] [内存消耗：1,379.29kb] [文件加载：38]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:39+08:00 ] 127.0.0.1 GET 127.0.0.1/public/admin/admin/lst.html
+[运行时间：0.106006s] [吞吐率：9.43req/s] [内存消耗：1,627.23kb] [文件加载：44]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/public/index.php/admin/admin/add',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->lst[ F:\Programme\GitHub\Personal-Blog\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] F:\Programme\GitHub\Personal-Blog\public/../application/admin\view\admin\lst.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:57:40+08:00 ] 127.0.0.1 GET 127.0.0.1/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[运行时间：0.079004s] [吞吐率：12.66req/s] [内存消耗：1,379.29kb] [文件加载：38]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:58:38+08:00 ] 127.0.0.1 GET 127.0.0.1/public/admin/admin/edit
+[运行时间：0.129008s] [吞吐率：7.75req/s] [内存消耗：1,821.41kb] [文件加载：46]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit[ F:\Programme\GitHub\Personal-Blog\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] F:\Programme\GitHub\Personal-Blog\public/../application/admin\view\admin\edit.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:58:38+08:00 ] 127.0.0.1 GET 127.0.0.1/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[运行时间：0.075004s] [吞吐率：13.33req/s] [内存消耗：1,379.29kb] [文件加载：38]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:58:43+08:00 ] 127.0.0.1 GET 127.0.0.1/public/admin/admin/lst.html
+[运行时间：0.080005s] [吞吐率：12.50req/s] [内存消耗：1,627.22kb] [文件加载：44]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/public/admin/admin/edit',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->lst[ F:\Programme\GitHub\Personal-Blog\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] F:\Programme\GitHub\Personal-Blog\public/../application/admin\view\admin\lst.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-06T09:58:44+08:00 ] 127.0.0.1 GET 127.0.0.1/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[运行时间：0.071004s] [吞吐率：14.08req/s] [内存消耗：1,379.29kb] [文件加载：38]
+[ info ] [ LANG ] F:\Programme\GitHub\Personal-Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
