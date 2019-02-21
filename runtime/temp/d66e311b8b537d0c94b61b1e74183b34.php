@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:81:"F:\Programme\GitHub\Personal-Blog\public/../application/admin\view\admin\lst.html";i:1549418055;s:75:"F:\Programme\GitHub\Personal-Blog\application\admin\view\common\header.html";i:1549416997;s:76:"F:\Programme\GitHub\Personal-Blog\application\admin\view\common\sidebar.html";i:1549418218;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:81:"F:\Programme\GitHub\Personal-Blog\public/../application/admin\view\admin\lst.html";i:1549915272;s:75:"F:\Programme\GitHub\Personal-Blog\application\admin\view\common\header.html";i:1549416997;s:76:"F:\Programme\GitHub\Personal-Blog\application\admin\view\common\sidebar.html";i:1549915061;}*/ ?>
 <!DOCTYPE html>
 <html><head>
 	    <meta charset="utf-8">
@@ -103,7 +103,7 @@
             </a>
             <ul class="submenu">
                 <li>
-                    <a href="/public/admin/admin/lst.html">
+                    <a href="<?php echo url('admin/lst'); ?>">
                         <span class="menu-text">
                             管理列表                                    </span>
                         <i class="menu-expand"></i>
@@ -168,7 +168,7 @@
                 <!-- Page Body -->
                 <div class="page-body">
                     
-<button type="button" tooltip="添加用户" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/admin/user/add.html'"> <i class="fa fa-plus"></i> Add
+<button type="button" tooltip="添加用户" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url('admin/add'); ?>'"> <i class="fa fa-plus"></i> Add
 </button>
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12">
