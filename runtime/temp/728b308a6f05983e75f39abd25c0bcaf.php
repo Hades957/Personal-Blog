@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:91:"D:\phpStudy\PHPTutorial\WWW\Personal-Blog\public/../application/index\view\index\index.html";i:1554235806;s:83:"D:\phpStudy\PHPTutorial\WWW\Personal-Blog\application\index\view\common\header.html";i:1548621074;s:81:"D:\phpStudy\PHPTutorial\WWW\Personal-Blog\application\index\view\common\foot.html";i:1549913061;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,12 +7,46 @@
 <meta name="keywords" content="童老师ThinkPHP交流群：484519446" />
 <meta name="description" content="童老师ThinkPHP交流群：484519446" /> 
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<link href="__PUBLIC__/style/lady.css" type="text/css" rel="stylesheet" />
-<script type='text/javascript' src='__PUBLIC__/style/ismobile.js'></script>
+<link href="http://127.0.0.1/Personal-Blog/public/static/index/style/lady.css" type="text/css" rel="stylesheet" />
+<script type='text/javascript' src='http://127.0.0.1/Personal-Blog/public/static/index/style/ismobile.js'></script>
 </head>
 
 <body>
-	{include file="common/header" /}
+	<div class="ladytop">
+    <div class="nav">
+        <div class="left">
+        	<a href="">
+        		<img src="http://127.0.0.1/Personal-Blog/public/static/index/images/hunshang.png" alt="wed114婚尚">
+        	</a>
+        </div>
+        <div class="right">
+        	<div class="box">
+        		<a href="hunjia/"  rel='dropmenu209'>婚嫁</a> 
+        		<a href="meirong/"  rel='dropmenu110'>美容</a> 
+        		<a href="fushi/"  rel='dropmenu112'>服饰</a> 
+        		<a href="yule/"  rel='dropmenu118'>娱乐</a> 
+        		<a href="jiankang/"  rel='dropmenu120'>健康</a> 
+        		<a href="meishi/"  rel='dropmenu122'>美食</a> 
+        		<a href=""  rel='dropmenu117'>生活</a> 
+        		<a href="tuku/"  rel='dropmenu103'>图库</a> 
+        		<a href="zhuanti/" >专题</a> 	
+         	</div>	
+        </div>
+    </div>
+</div>
+
+<div class="hotmenu">
+	<div class="con">热门标签：
+		<a href='qiwenqushi/'>奇闻趣事</a> 
+		<a href=''>生活妙招</a> 
+		<a href='xingzuo/'>星座</a> 
+		<a href='qinzi/'>亲子</a> 
+		<a href='qiche/'>汽车</a> 
+		<a href='chongwubaike/'>宠物百科</a> 
+		<a href='jiaji/'>家居</a> 
+	</div>
+</div>
+
 <!--顶部通栏-->
 
 
@@ -21,7 +56,7 @@
 
 	<div class="left">
 				<div class="xnews2">
-				<div class="pic"><a target="_blank" href="20160920156279.html"><img src="__PUBLIC__/images/52-1609201202130-L.jpg" alt="在家如何自制烤肉 烤肉串致癌不适宜多吃"/></a></div>
+				<div class="pic"><a target="_blank" href="20160920156279.html"><img src="http://127.0.0.1/Personal-Blog/public/static/index/images/52-1609201202130-L.jpg" alt="在家如何自制烤肉 烤肉串致癌不适宜多吃"/></a></div>
 				<div class="dec">
 				<h3><a target="_blank" href="20160920156279.html">在家如何自制烤肉 烤肉串致癌不适宜多吃</a></h3>
 				<div class="time">发布时间：2016-09-20</div>
@@ -31,7 +66,7 @@
 				<div class="time"> </div>
 				</div>
 				</div><div class="xnews2">
-				<div class="pic"><a target="_blank" href="20160920156216.html"><img src="__PUBLIC__/images/55-16092011540a35.jpg" alt="部门聚餐通知怎么写 6篇范文推荐"/></a></div>
+				<div class="pic"><a target="_blank" href="20160920156216.html"><img src="http://127.0.0.1/Personal-Blog/public/static/index/images/55-16092011540a35.jpg" alt="部门聚餐通知怎么写 6篇范文推荐"/></a></div>
 				<div class="dec">
 				<h3><a target="_blank" href="20160920156216.html">部门聚餐通知怎么写 6篇范文推荐</a></h3>
 				<div class="time">发布时间：2016-09-20</div>
@@ -39,7 +74,7 @@
 				<div class="time"><a href='z97712.html'>聚餐</a>  </div>
 				</div>
 				</div><div class="xnews2">
-				<div class="pic"><a target="_blank" href="20160920156277.html"><img src="__PUBLIC__/images/57-1609201149550-L.jpg" alt="老爸过生日送什么礼物好 老爸过生日送什么好"/></a></div>
+				<div class="pic"><a target="_blank" href="20160920156277.html"><img src="http://127.0.0.1/Personal-Blog/public/static/index/images/57-1609201149550-L.jpg" alt="老爸过生日送什么礼物好 老爸过生日送什么好"/></a></div>
 				<div class="dec">
 				<h3><a target="_blank" href="20160920156277.html">老爸过生日送什么礼物好 老爸过生日送什么好</a></h3>
 				<div class="time">发布时间：2016-09-20</div>
@@ -47,7 +82,7 @@
 				<div class="time"><a href='z97715.html'>生日礼物</a>  </div>
 				</div>
 				</div><div class="xnews2">
-				<div class="pic"><a target="_blank" href="20160920156215.html"><img src="__PUBLIC__/images/55-160920114U2910.jpg" alt="深圳公司聚餐好去处 满足吃货们的各种需求"/></a></div>
+				<div class="pic"><a target="_blank" href="20160920156215.html"><img src="http://127.0.0.1/Personal-Blog/public/static/index/images/55-160920114U2910.jpg" alt="深圳公司聚餐好去处 满足吃货们的各种需求"/></a></div>
 				<div class="dec">
 				<h3><a target="_blank" href="20160920156215.html">深圳公司聚餐好去处 满足吃货们的各种需求</a></h3>
 				<div class="time">发布时间：2016-09-20</div>
@@ -56,7 +91,7 @@
 				<div class="time"><a href='z97712.html'>聚餐</a>  </div>
 				</div>
 				</div><div class="xnews2">
-				<div class="pic"><a target="_blank" href="20160920156257.html"><img src="__PUBLIC__/images/54-160920113H2U1.jpg" alt="吃火锅拉肚子怎么办 五种生活小方法教你有效缓解"/></a></div>
+				<div class="pic"><a target="_blank" href="20160920156257.html"><img src="http://127.0.0.1/Personal-Blog/public/static/index/images/54-160920113H2U1.jpg" alt="吃火锅拉肚子怎么办 五种生活小方法教你有效缓解"/></a></div>
 				<div class="dec">
 				<h3><a target="_blank" href="20160920156257.html">吃火锅拉肚子怎么办 五种生活小方法教你有效缓解</a></h3>
 				<div class="time">发布时间：2016-09-20</div>
@@ -66,7 +101,7 @@
 				<div class="time"><a href='z97697.html'>火锅</a>  </div>
 				</div>
 				</div><div class="xnews2">
-				<div class="pic"><a target="_blank" href="20160920156276.html"><img src="__PUBLIC__/images/57-1609201140460-L.jpg" alt="女生过生日送什么礼物比较好 可以讨女生开心的礼物"/></a></div>
+				<div class="pic"><a target="_blank" href="20160920156276.html"><img src="http://127.0.0.1/Personal-Blog/public/static/index/images/57-1609201140460-L.jpg" alt="女生过生日送什么礼物比较好 可以讨女生开心的礼物"/></a></div>
 				<div class="dec">
 				<h3><a target="_blank" href="20160920156276.html">女生过生日送什么礼物比较好 可以讨女生开心的礼物</a></h3>
 				<div class="time">发布时间：2016-09-20</div>
@@ -74,7 +109,7 @@
 				<div class="time"><a href='z97715.html'>生日礼物</a>  </div>
 				</div>
 				</div><div class="xnews2">
-				<div class="pic"><a target="_blank" href="20160920156278.html"><img src="__PUBLIC__/images/52-1609201150560-L.jpg" alt="衣服上的烧烤味怎么处理 小方法巧除味"/></a></div>
+				<div class="pic"><a target="_blank" href="20160920156278.html"><img src="http://127.0.0.1/Personal-Blog/public/static/index/images/52-1609201150560-L.jpg" alt="衣服上的烧烤味怎么处理 小方法巧除味"/></a></div>
 				<div class="dec">
 				<h3><a target="_blank" href="20160920156278.html">衣服上的烧烤味怎么处理 小方法巧除味</a></h3>
 				<div class="time">发布时间：2016-09-20</div>
@@ -84,7 +119,7 @@
 				<div class="time"><a href='z95857.html'>生活小妙招</a>  </div>
 				</div>
 				</div><div class="xnews2">
-				<div class="pic"><a target="_blank" href="20160920156214.html"><img src="__PUBLIC__/images/55-1609201139142c.jpg" alt="广州公司聚餐好去处 聚餐休闲的好地方"/></a></div>
+				<div class="pic"><a target="_blank" href="20160920156214.html"><img src="http://127.0.0.1/Personal-Blog/public/static/index/images/55-1609201139142c.jpg" alt="广州公司聚餐好去处 聚餐休闲的好地方"/></a></div>
 				<div class="dec">
 				<h3><a target="_blank" href="20160920156214.html">广州公司聚餐好去处 聚餐休闲的好地方</a></h3>
 				<div class="time">发布时间：2016-09-20</div>
@@ -93,7 +128,7 @@
 				<div class="time"><a href='z97712.html'>聚餐</a>  </div>
 				</div>
 				</div><div class="xnews2">
-				<div class="pic"><a target="_blank" href="20160920156275.html"><img src="__PUBLIC__/images/57-1609201131370-L.jpg" alt="老年人过生日送什么礼物好 老人过生日送什么好"/></a></div>
+				<div class="pic"><a target="_blank" href="20160920156275.html"><img src="http://127.0.0.1/Personal-Blog/public/static/index/images/57-1609201131370-L.jpg" alt="老年人过生日送什么礼物好 老人过生日送什么好"/></a></div>
 				<div class="dec">
 				<h3><a target="_blank" href="20160920156275.html">老年人过生日送什么礼物好 老人过生日送什么好</a></h3>
 				<div class="time">发布时间：2016-09-20</div>
@@ -101,7 +136,7 @@
 				<div class="time"><a href='z97715.html'>生日礼物</a>  </div>
 				</div>
 				</div><div class="xnews2">
-				<div class="pic"><a target="_blank" href="20160920156274.html"><img src="__PUBLIC__/images/52-160920112I80-L.jpg" alt="孕妇可以学开车吗 孕妇开车注意事项"/></a></div>
+				<div class="pic"><a target="_blank" href="20160920156274.html"><img src="http://127.0.0.1/Personal-Blog/public/static/index/images/52-160920112I80-L.jpg" alt="孕妇可以学开车吗 孕妇开车注意事项"/></a></div>
 				<div class="dec">
 				<h3><a target="_blank" href="20160920156274.html">孕妇可以学开车吗 孕妇开车注意事项</a></h3>
 				<div class="time">发布时间：2016-09-20</div>
@@ -168,7 +203,13 @@
 </div>
 
 
-	{include file="common/foot" /}
+	<div class="footerd">
+    <ul>
+        <li>Copyright &#169; 2008-2016  all rights reserved 版权所有   
+            <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">蜀icp备08107937号</a>
+        </li> 
+    </ul>
+</div>
 
 
 
