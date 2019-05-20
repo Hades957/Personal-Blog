@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // +----------------------------------------------------------------------
 // | ThinkPHP [ WE CAN DO IT JUST THINK ]
 // +----------------------------------------------------------------------
@@ -13,7 +13,6 @@
 
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/../application/');
-define('SITE_URL', 'http://127.0.0.1/Personal-Blog');//站点根路径
-
+define('SITE_URL', 'http://106.14.227.213/tp5');
 // 加载框架引导文件
 require __DIR__ . '/../thinkphp/start.php';

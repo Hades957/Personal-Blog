@@ -8,10 +8,10 @@ img{border:0;}
 
 .ladytop{width:100%;margin:0 auto;background:#ff6278;height:40px;padding:15px 0;}
 .ladytop .nav{width:1080px; margin:0 auto;height:40px;position:relative;}
-.ladytop .nav .left{float:left; width:230px;}
+.ladytop .nav .left{margin-top:-10px;margin-left:-120px;float:left;}
 .ladytop .nav .right{float:right;width:850px;}
-.ladytop .nav .right .box{width:920px;}
-.ladytop .nav .right .box a{float:left;margin-right:65px;font-size:18px;color:#fff;line-height:40px;}
+.ladytop .nav .right .box{width:1000px;}
+.ladytop .nav .right .box a{float:left;margin-right:50px;font-size:18px;color:#fff;line-height:40px;}
 .ladytop .nav .right .box a:hover{color:#000;text-decoration: underline;}
 
 .menu{width:100%; background:#000;}

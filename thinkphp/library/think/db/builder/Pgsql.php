@@ -2,7 +2,7 @@
 // +----------------------------------------------------------------------
 // | ThinkPHP [ WE CAN DO IT JUST THINK ]
 // +----------------------------------------------------------------------
-// | Copyright (c) 2006~2018 http://thinkphp.cn All rights reserved.
+// | Copyright (c) 2006~2016 http://thinkphp.cn All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
@@ -18,8 +18,6 @@ use think\db\Builder;
  */
 class Pgsql extends Builder
 {
-    protected $insertSql    = 'INSERT INTO %TABLE% (%FIELD%) VALUES (%DATA%) %COMMENT%';
-    protected $insertAllSql = 'INSERT INTO %TABLE% (%FIELD%) %DATA% %COMMENT%';
 
     /**
      * limit分析
@@ -44,34 +42,16 @@ class Pgsql extends Builder
     /**
      * 字段和表名处理
      * @access protected
-     * @param mixed  $key
-     * @param array  $options
+     * @param string $key
      * @return string
      */
-    protected function parseKey($key, $options = [], $strict = false)
+    protected function parseKey($key)
     {
-        if (is_numeric($key)) {
-            return $key;
-        } elseif ($key instanceof Expression) {
-            return $key->getValue();
-        }
-
         $key = trim($key);
         if (strpos($key, '$.') && false === strpos($key, '(')) {
             // JSON字段支持
             list($field, $name) = explode('$.', $key);
             $key                = $field . '->>\'' . $name . '\'';
-        } elseif (strpos($key, '.')) {
-            list($table, $key) = explode('.', $key, 2);
-            if ('__TABLE__' == $table) {
-                $table = $this->query->getTable();
-            }
-            if (isset($options['alias'][$table])) {
-                $table = $options['alias'][$table];
-            }
-        }
-        if (isset($table)) {
-            $key = $table . '.' . $key;
         }
         return $key;
     }

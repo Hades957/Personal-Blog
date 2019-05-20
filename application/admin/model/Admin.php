@@ -4,7 +4,6 @@ use think\Model;
 use think\Db;
 class Admin extends Model
 {
-
 	public function login($data){
 		$captcha = new \think\captcha\Captcha();
         if (!$captcha->check($data['code'])) {
@@ -23,5 +22,4 @@ class Admin extends Model
 			return 1; //用户不存在
 		}
 	}
-
 }

@@ -1,7 +1,5 @@
----------------------------------------------------------------
-[ 2019-05-17T14:59:35+08:00 ] 0.0.0.0 GET localhost/public/
-[运行时间：0.713959s] [吞吐率：1.40req/s] [内存消耗：1,790.50kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\thinkphp\lang\zh-cn.php
+[ 2019-05-17T14:50:11+08:00 ] 172.17.46.174 218.23.225.46 GET /tp5/public/
+[ log ] zbifeng.com/tp5/public/ [运行时间：0.026738s][吞吐率：37.40req/s] [内存消耗：3,325.76kb] [文件加载：50]
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -12,2508 +10,284 @@
   ),
 )
 [ info ] [ HEADER ] array (
-  'host' => 'localhost',
+  'host' => 'zbifeng.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
   'connection' => 'keep-alive',
   'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\public/../application/index\view\index\index.html [ array (
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ /var/www/html/tp5/application/index/controller/Index.php 6 - 11
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5/public/../application/index/view/index/index.html [ array (
+  0 => 'clickres',
+  1 => 'tjres',
+  2 => 'cateres',
+  3 => 'tagres',
+  4 => 'articleres',
 ) ]
 [ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001516s ] mysql:dbname=blog;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` ORDER BY click desc LIMIT 8   [ RunTime:0.000223s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000141s ] mysql:dbname=blog;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `state` = 1 ORDER BY click desc LIMIT 8    [ RunTime:0.000231s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000107s ] mysql:dbname=blog;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` ORDER BY id asc  [ RunTime:0.000116s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000101s ] mysql:dbname=blog;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_tags` [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_tags` ORDER BY id desc  [ RunTime:0.000096s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000117s ] mysql:dbname=blog;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` ORDER BY id desc LIMIT 1   [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` ORDER BY id desc LIMIT 0,3   [ RunTime:0.000166s ]
+
 ---------------------------------------------------------------
-[ 2019-05-17T15:00:50+08:00 ] 0.0.0.0 GET localhost/public/
-[运行时间：0.046654s] [吞吐率：21.43req/s] [内存消耗：1,790.94kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\thinkphp\lang\zh-cn.php
+[ 2019-05-17T14:50:11+08:00 ] 172.17.46.174 218.23.225.46 GET /tp5/public/static/index/style/bootstrapt.min.js
+[ log ] 106.14.227.213/tp5/public/static/index/style/bootstrapt.min.js [运行时间：0.010799s][吞吐率：92.60req/s] [内存消耗：1,385.53kb] [文件加载：33]
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => '',
-    1 => NULL,
-    2 => NULL,
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\public/../application/index\view\index\index.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:01:44+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/
-[运行时间：0.052716s] [吞吐率：18.97req/s] [内存消耗：1,793.54kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => '',
-    1 => NULL,
-    2 => NULL,
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/index\view\index\index.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:06:13+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/index/index
-[运行时间：0.107633s] [吞吐率：9.29req/s] [内存消耗：1,836.59kb] [文件加载：47]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
+    0 => 'static',
     1 => 'index',
-    2 => 'index',
+    2 => 'style',
   ),
 )
 [ info ] [ HEADER ] array (
-  'host' => 'localhost',
+  'host' => '106.14.227.213',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zbifeng.com/tp5/public/',
   'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Index.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\index\index.html [ array (
-) ]
+[ info ] [ LANG ] /var/www/html/tp5/thinkphp/lang/zh-cn.php
 [ info ] [ LOG ] INIT File
+
 ---------------------------------------------------------------
-[ 2019-05-17T15:06:13+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.189007s] [吞吐率：5.29req/s] [内存消耗：1,380.88kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
+[ 2019-05-17T14:50:11+08:00 ] 172.17.46.174 218.23.225.46 GET /tp5/public/static/uploads/20190422/de4516c06f14b7978bb44c223aae3eb1.png
+[ log ] 106.14.227.213/tp5/public/static/uploads/20190422/de4516c06f14b7978bb44c223aae3eb1.png [运行时间：0.010804s][吞吐率：92.56req/s] [内存消耗：1,385.48kb] [文件加载：33]
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
+    1 => 'uploads',
+    2 => '20190422',
   ),
 )
 [ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
+  'host' => '106.14.227.213',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zbifeng.com/tp5/public/',
   'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
 )
 [ info ] [ PARAM ] array (
-  'v' => '4.3.0',
 )
+[ info ] [ LANG ] /var/www/html/tp5/thinkphp/lang/zh-cn.php
 [ info ] [ LOG ] INIT File
+
 ---------------------------------------------------------------
-[ 2019-05-17T15:06:22+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.266446s] [吞吐率：3.75req/s] [内存消耗：2,819.62kb] [文件加载：56]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
+[ 2019-05-17T14:50:11+08:00 ] 172.17.46.174 218.23.225.46 GET /tp5/public/static/uploads/20190419/4367454a6fb54235bcc4e398f10634c5.png
+[ log ] 106.14.227.213/tp5/public/static/uploads/20190419/4367454a6fb54235bcc4e398f10634c5.png [运行时间：0.011223s][吞吐率：89.10req/s] [内存消耗：1,385.48kb] [文件加载：33]
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
+    0 => 'static',
+    1 => 'uploads',
+    2 => '20190419',
   ),
 )
 [ info ] [ HEADER ] array (
-  'host' => 'localhost',
+  'host' => '106.14.227.213',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zbifeng.com/tp5/public/',
   'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/index/index',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /var/www/html/tp5/thinkphp/lang/zh-cn.php
 [ info ] [ LOG ] INIT File
-[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'blog'[D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\library\think\db\Connection.php:295]
+
 ---------------------------------------------------------------
-[ 2019-05-17T15:10:09+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/index/index
-[运行时间：0.063407s] [吞吐率：15.77req/s] [内存消耗：1,688.66kb] [文件加载：45]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
+[ 2019-05-17T14:50:11+08:00 ] 172.17.46.174 218.23.225.46 GET /tp5/public/static/index/images/hunshang.png
+[ log ] 106.14.227.213/tp5/public/static/index/images/hunshang.png [运行时间：0.009983s][吞吐率：100.17req/s] [内存消耗：1,385.49kb] [文件加载：33]
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'admin',
+    0 => 'static',
     1 => 'index',
-    2 => 'index',
+    2 => 'images',
   ),
 )
 [ info ] [ HEADER ] array (
-  'host' => 'localhost',
+  'host' => '106.14.227.213',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zbifeng.com/tp5/public/',
   'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Index.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\index\index.html [ array (
-) ]
+[ info ] [ LANG ] /var/www/html/tp5/thinkphp/lang/zh-cn.php
 [ info ] [ LOG ] INIT File
+
 ---------------------------------------------------------------
-[ 2019-05-17T15:10:09+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.049884s] [吞吐率：20.05req/s] [内存消耗：1,380.88kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
+[ 2019-05-17T14:50:11+08:00 ] 172.17.46.174 218.23.225.46 GET /tp5/public/static/index/style/bootstrapt.min.js
+[ log ] 106.14.227.213/tp5/public/static/index/style/bootstrapt.min.js [运行时间：0.009938s][吞吐率：100.62req/s] [内存消耗：1,384.98kb] [文件加载：33]
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:10:11+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.234795s] [吞吐率：4.26req/s] [内存消耗：3,094.33kb] [文件加载：60]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/index/index',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.001051s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.035181s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000372s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000320s ]
----------------------------------------------------------------
-[ 2019-05-17T15:10:11+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.034158s] [吞吐率：29.28req/s] [内存消耗：1,380.83kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:10:14+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/edit/id/1.html
-[运行时间：0.153892s] [吞吐率：6.50req/s] [内存消耗：2,650.61kb] [文件加载：54]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'edit',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'id' => '1',
-)
-[ info ] [ RUN ] app\admin\controller\Links->edit[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\edit.html [ array (
-  0 => 'Links',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.001562s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.017194s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.014816s ]
----------------------------------------------------------------
-[ 2019-05-17T15:10:15+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.062721s] [吞吐率：15.94req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:10:16+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.048932s] [吞吐率：20.44req/s] [内存消耗：1,380.88kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:17:09+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.142852s] [吞吐率：7.00req/s] [内存消耗：3,095.11kb] [文件加载：60]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/index/index',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.002382s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.031000s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000348s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000296s ]
----------------------------------------------------------------
-[ 2019-05-17T15:17:10+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.073618s] [吞吐率：13.58req/s] [内存消耗：1,380.50kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:17:11+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/cate/lst.html
-[运行时间：0.048141s] [吞吐率：20.77req/s] [内存消耗：1,453.78kb] [文件加载：43]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'cate',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:17:26+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.064095s] [吞吐率：15.60req/s] [内存消耗：1,380.83kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:18:11+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/index.php
-[运行时间：0.068507s] [吞吐率：14.60req/s] [内存消耗：1,841.90kb] [文件加载：50]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => '',
-    1 => NULL,
-    2 => NULL,
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'accept-encoding' => 'compress,gzip',
-  'connection' => 'Close',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/index\view\index\index.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
-[ error ] [1]Maximum execution time of 60 seconds exceeded[x��T�n�F~�H��h�%i�RW�8ƃ���2?v�=��ԇ�Hb�RߠH�a.g��]�&�N��P|��}r���������ۍ{7���?\'w7��r{7�N_��t:y���~:�����L���7!���b�X�ltV���cS��.�<���ot�l�(iSC�k[2�aJ��YCr��2R�Z��eX�2K=�FK�D^bk4%�[��ǝ� ��kMMC_�o���}�iWG�+]K�%���N��<��ʯV�c�y�-�����u�E��3Cs��x�_�l5�����E9���yѬ�
-Ξ)�y�]�⥐p<C��S�4����KT�[�|�T8gV�R��E�=�����Oa��؛3ˈ��BIi�w_:kװ7�m)��⽷��C��[�H{����G�� �Q�5�؃���)(Z
-c�F�;8�x�2����b�n�Ԉ�k��N�ɡ�`�q�6���Y+�����G�Td��
-�K��x��Y��s���ಳ�G�6�R���}��K��K"����!p�0mA��bܫD����ԗ1��x�̆��C<�~أ�8�1x���.��^x����%�-R�49�#ht�;4��X�Y�1�$�XW�(s��3�/|gX Cn����ֻ��H0�/��ןh�:W��=��w��Yb���8[T�Țݠ吋��e�W�������7�~�*��>5�O��)�T����h��m@/Ј�nk�߫\�N�b�>Y�L����G��s�������+E[����H�F<����ow�7�ݮ4L����<��`�X�������E�~��{��9@���-�x>��j�~/�{�|�
-���8���C��~Í�[1hҬR�ƞؐl�sݡr�����5f8���q/��	�:�J�~n�y��S4�/�{��wҏ:�5/��A��nA?�Z()���ߏl��P��~\�x]�k�Nno���Q�(13) : eval()'d code(1) : eval()'d code:5]
----------------------------------------------------------------
-[ 2019-05-17T15:23:29+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.138168s] [吞吐率：7.24req/s] [内存消耗：3,095.07kb] [文件加载：60]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/index/index',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.001041s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.030330s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000571s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.001151s ]
----------------------------------------------------------------
-[ 2019-05-17T15:23:29+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.077137s] [吞吐率：12.96req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:23:36+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/%7B%20url('cate/lst')%7D
-[运行时间：0.041313s] [吞吐率：24.21req/s] [内存消耗：1,675.54kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => '{ url(\'cate',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:24:03+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/%7B%20url('cate/lst')%7D
-[运行时间：0.041716s] [吞吐率：23.97req/s] [内存消耗：1,675.89kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => '{ url(\'cate',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:26:24+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/%7B%20url('cate/lst')%7D
-[运行时间：0.036935s] [吞吐率：27.07req/s] [内存消耗：1,675.89kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => '{ url(\'cate',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:26:25+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/%7B%20url('cate/lst')%7D
-[运行时间：0.041439s] [吞吐率：24.13req/s] [内存消耗：1,675.89kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => '{ url(\'cate',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:26:50+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/%7B%20url('cate/lst')%7D
-[运行时间：0.037423s] [吞吐率：26.72req/s] [内存消耗：1,675.89kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => '{ url(\'cate',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:26:51+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/%7B%20url('cate/lst')%7D
-[运行时间：0.038488s] [吞吐率：25.98req/s] [内存消耗：1,675.89kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => '{ url(\'cate',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:28:07+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.058576s] [吞吐率：17.07req/s] [内存消耗：1,380.83kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:28:08+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.126177s] [吞吐率：7.93req/s] [内存消耗：3,095.55kb] [文件加载：60]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/index/index',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.010721s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.021070s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000366s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000361s ]
----------------------------------------------------------------
-[ 2019-05-17T15:28:08+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.040324s] [吞吐率：24.80req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:28:09+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.100033s] [吞吐率：10.00req/s] [内存消耗：2,940.66kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/index/index',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.001988s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.018064s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000426s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000533s ]
----------------------------------------------------------------
-[ 2019-05-17T15:28:09+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.076765s] [吞吐率：13.03req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:30:48+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.098798s] [吞吐率：10.12req/s] [内存消耗：2,940.66kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/index/index',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.001601s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.022710s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000462s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000935s ]
----------------------------------------------------------------
-[ 2019-05-17T15:30:48+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.076130s] [吞吐率：13.14req/s] [内存消耗：1,380.88kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:30:49+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.082855s] [吞吐率：12.07req/s] [内存消耗：2,940.63kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.000771s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.019678s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000512s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000367s ]
----------------------------------------------------------------
-[ 2019-05-17T15:30:49+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.035899s] [吞吐率：27.86req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:30:53+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.082175s] [吞吐率：12.17req/s] [内存消耗：2,940.63kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.000745s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.016791s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000989s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000445s ]
----------------------------------------------------------------
-[ 2019-05-17T15:30:54+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.031192s] [吞吐率：32.06req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:31:24+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.091531s] [吞吐率：10.93req/s] [内存消耗：2,940.65kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.000845s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.033496s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000406s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000336s ]
----------------------------------------------------------------
-[ 2019-05-17T15:31:24+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.043387s] [吞吐率：23.05req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:31:26+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.146428s] [吞吐率：6.83req/s] [内存消耗：2,940.63kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.000971s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.076069s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000935s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000618s ]
----------------------------------------------------------------
-[ 2019-05-17T15:31:26+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.075020s] [吞吐率：13.33req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:31:34+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/add.html
-[运行时间：0.063358s] [吞吐率：15.78req/s] [内存消耗：1,856.17kb] [文件加载：47]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'add',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->add[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\add.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:31:34+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.043067s] [吞吐率：23.22req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:31:37+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/add.html
-[运行时间：0.038838s] [吞吐率：25.75req/s] [内存消耗：1,702.56kb] [文件加载：45]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'add',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/add.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->add[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\add.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:31:37+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.053866s] [吞吐率：18.56req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:33:49+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/add.html
-[运行时间：0.059303s] [吞吐率：16.86req/s] [内存消耗：1,702.70kb] [文件加载：45]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'add',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/add.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->add[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\add.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:33:49+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.084484s] [吞吐率：11.84req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:33:52+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/add.html
-[运行时间：0.035163s] [吞吐率：28.44req/s] [内存消耗：1,702.56kb] [文件加载：45]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'add',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/add.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->add[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\add.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:33:52+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.028435s] [吞吐率：35.17req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:33:53+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/add.html
-[运行时间：0.031346s] [吞吐率：31.90req/s] [内存消耗：1,702.56kb] [文件加载：45]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'add',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/add.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->add[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\add.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:33:54+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.033909s] [吞吐率：29.49req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:34:19+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/add.html
-[运行时间：0.051730s] [吞吐率：19.33req/s] [内存消耗：1,856.52kb] [文件加载：47]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'add',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'pragma' => 'no-cache',
-  'cache-control' => 'no-cache',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/add.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->add[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\add.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:34:19+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.037781s] [吞吐率：26.47req/s] [内存消耗：1,381.11kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'pragma' => 'no-cache',
-  'cache-control' => 'no-cache',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:36:10+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/add.html
-[运行时间：0.032679s] [吞吐率：30.60req/s] [内存消耗：1,702.97kb] [文件加载：45]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'add',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'pragma' => 'no-cache',
-  'cache-control' => 'no-cache',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/add.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->add[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\add.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:36:10+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.038177s] [吞吐率：26.19req/s] [内存消耗：1,381.11kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'pragma' => 'no-cache',
-  'cache-control' => 'no-cache',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:36:10+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/add.html
-[运行时间：0.030660s] [吞吐率：32.62req/s] [内存消耗：1,702.97kb] [文件加载：45]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'add',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'pragma' => 'no-cache',
-  'cache-control' => 'no-cache',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/add.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->add[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\add.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:36:11+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.042873s] [吞吐率：23.32req/s] [内存消耗：1,381.11kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'pragma' => 'no-cache',
-  'cache-control' => 'no-cache',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:36:13+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/admin/lst.html
-[运行时间：0.124229s] [吞吐率：8.05req/s] [内存消耗：3,103.76kb] [文件加载：60]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'admin',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/add.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Admin->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Admin.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\admin\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.001754s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.032444s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin` LIMIT 1 [ RunTime:0.000794s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_admin` LIMIT 0,5 [ RunTime:0.000603s ]
----------------------------------------------------------------
-[ 2019-05-17T15:36:13+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.044789s] [吞吐率：22.33req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:36:15+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/admin/lst.html
-[运行时间：0.071262s] [吞吐率：14.03req/s] [内存消耗：2,948.20kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'admin',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'pragma' => 'no-cache',
-  'cache-control' => 'no-cache',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/add.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Admin->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Admin.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\admin\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.002017s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018111s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin` LIMIT 1 [ RunTime:0.001067s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_admin` LIMIT 0,5 [ RunTime:0.000588s ]
----------------------------------------------------------------
-[ 2019-05-17T15:36:15+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.034443s] [吞吐率：29.03req/s] [内存消耗：1,381.11kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'pragma' => 'no-cache',
-  'cache-control' => 'no-cache',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:36:17+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/admin/lst.html
-[运行时间：0.073816s] [吞吐率：13.55req/s] [内存消耗：2,947.75kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'admin',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/admin/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Admin->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Admin.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\admin\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.000879s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.021590s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin` LIMIT 1 [ RunTime:0.000425s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_admin` LIMIT 0,5 [ RunTime:0.000391s ]
----------------------------------------------------------------
-[ 2019-05-17T15:36:17+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.034893s] [吞吐率：28.66req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:36:27+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/admin/lst.html
-[运行时间：0.076508s] [吞吐率：13.07req/s] [内存消耗：2,947.75kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'admin',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/admin/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Admin->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Admin.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\admin\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.000995s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019339s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin` LIMIT 1 [ RunTime:0.000408s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_admin` LIMIT 0,5 [ RunTime:0.000335s ]
----------------------------------------------------------------
-[ 2019-05-17T15:36:27+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.027929s] [吞吐率：35.80req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:36:56+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/cate/index
-[运行时间：0.041017s] [吞吐率：24.38req/s] [内存消耗：1,675.53kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'cate',
-    2 => 'index',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:37:03+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/cate/lst
-[运行时间：0.147335s] [吞吐率：6.79req/s] [内存消耗：3,136.01kb] [文件加载：62]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'cate',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Cate->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Cate.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\cate\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.000992s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.028333s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_cate` LIMIT 1 [ RunTime:0.000666s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_cate` LIMIT 0,5 [ RunTime:0.000576s ]
-[ error ] [0]类的属性不存在:app\admin\model\Cate->username[D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\library\think\Model.php:626]
----------------------------------------------------------------
-[ 2019-05-17T15:39:06+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/cate/index
-[运行时间：0.040618s] [吞吐率：24.62req/s] [内存消耗：1,675.53kb] [文件加载：46]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'cate',
-    2 => 'index',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:40:51+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin
-[运行时间：0.052899s] [吞吐率：18.90req/s] [内存消耗：1,837.95kb] [文件加载：47]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => NULL,
-    2 => NULL,
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Index.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\index\index.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:40:51+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.035744s] [吞吐率：27.98req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:40:53+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/index/index.html
-[运行时间：0.040823s] [吞吐率：24.50req/s] [内存消耗：1,688.92kb] [文件加载：45]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
     1 => 'index',
-    2 => 'index',
+    2 => 'style',
   ),
 )
 [ info ] [ HEADER ] array (
-  'host' => 'localhost',
+  'host' => '106.14.227.213',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zbifeng.com/tp5/public/',
   'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'think_var=zh-cn',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Index.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\index\index.html [ array (
-) ]
+[ info ] [ LANG ] /var/www/html/tp5/thinkphp/lang/zh-cn.php
 [ info ] [ LOG ] INIT File
+
 ---------------------------------------------------------------
-[ 2019-05-17T15:40:53+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.043615s] [吞吐率：22.93req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
+[ 2019-05-17T14:50:11+08:00 ] 172.17.46.174 218.23.225.46 GET /tp5/public/static/uploads/20190509/e660729facc5826ecfbd1d9d0392be27.png
+[ log ] 106.14.227.213/tp5/public/static/uploads/20190509/e660729facc5826ecfbd1d9d0392be27.png [运行时间：0.009530s][吞吐率：104.93req/s] [内存消耗：1,385.48kb] [文件加载：33]
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
+    1 => 'uploads',
+    2 => '20190509',
   ),
 )
 [ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
+  'host' => '106.14.227.213',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zbifeng.com/tp5/public/',
   'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
 )
 [ info ] [ PARAM ] array (
-  'v' => '4.3.0',
 )
+[ info ] [ LANG ] /var/www/html/tp5/thinkphp/lang/zh-cn.php
 [ info ] [ LOG ] INIT File
+
 ---------------------------------------------------------------
-[ 2019-05-17T15:41:01+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/index/index.html
-[运行时间：0.027840s] [吞吐率：35.92req/s] [内存消耗：1,688.95kb] [文件加载：45]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
+[ 2019-05-17T14:50:12+08:00 ] 172.17.46.174 218.23.225.46 GET /tp5/public/static/index/images/hunshang.png
+[ log ] 106.14.227.213/tp5/public/static/index/images/hunshang.png [运行时间：0.009434s][吞吐率：106.00req/s] [内存消耗：1,384.88kb] [文件加载：33]
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'admin',
+    0 => 'static',
     1 => 'index',
-    2 => 'index',
+    2 => 'images',
   ),
 )
 [ info ] [ HEADER ] array (
-  'host' => 'localhost',
+  'host' => '106.14.227.213',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zbifeng.com/tp5/public/',
   'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/index/index.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'think_var=zh-cn',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Index.php ]
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\index\index.html [ array (
-) ]
+[ info ] [ LANG ] /var/www/html/tp5/thinkphp/lang/zh-cn.php
 [ info ] [ LOG ] INIT File
+
 ---------------------------------------------------------------
-[ 2019-05-17T15:41:01+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.037992s] [吞吐率：26.32req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
+[ 2019-05-17T14:50:12+08:00 ] 172.17.46.174 218.23.225.46 GET /tp5/public/static/uploads/20190422/de4516c06f14b7978bb44c223aae3eb1.png
+[ log ] 106.14.227.213/tp5/public/static/uploads/20190422/de4516c06f14b7978bb44c223aae3eb1.png [运行时间：0.011772s][吞吐率：84.95req/s] [内存消耗：1,384.90kb] [文件加载：33]
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
+    1 => 'uploads',
+    2 => '20190422',
   ),
 )
 [ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
+  'host' => '106.14.227.213',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zbifeng.com/tp5/public/',
   'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:41:03+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.098417s] [吞吐率：10.16req/s] [内存消耗：3,095.54kb] [文件加载：60]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/index/index.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'think_var=zh-cn',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
+[ info ] [ LANG ] /var/www/html/tp5/thinkphp/lang/zh-cn.php
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.000870s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.020968s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000709s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000739s ]
+
 ---------------------------------------------------------------
-[ 2019-05-17T15:41:03+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.034443s] [吞吐率：29.03req/s] [内存消耗：1,380.86kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
+[ 2019-05-17T14:50:12+08:00 ] 172.17.46.174 218.23.225.46 GET /tp5/public/static/uploads/20190419/4367454a6fb54235bcc4e398f10634c5.png
+[ log ] 106.14.227.213/tp5/public/static/uploads/20190419/4367454a6fb54235bcc4e398f10634c5.png [运行时间：0.012747s][吞吐率：78.45req/s] [内存消耗：1,384.90kb] [文件加载：33]
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
+    1 => 'uploads',
+    2 => '20190419',
   ),
 )
 [ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
+  'host' => '106.14.227.213',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zbifeng.com/tp5/public/',
   'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'think_var=zh-cn',
 )
 [ info ] [ PARAM ] array (
-  'v' => '4.3.0',
 )
+[ info ] [ LANG ] /var/www/html/tp5/thinkphp/lang/zh-cn.php
 [ info ] [ LOG ] INIT File
+
 ---------------------------------------------------------------
-[ 2019-05-17T15:41:05+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.073022s] [吞吐率：13.69req/s] [内存消耗：2,940.63kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.000882s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.021679s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000391s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000521s ]
----------------------------------------------------------------
-[ 2019-05-17T15:41:05+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.033447s] [吞吐率：29.90req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:41:57+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.100369s] [吞吐率：9.96req/s] [内存消耗：3,096.19kb] [文件加载：60]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.000832s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.017781s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000330s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000343s ]
----------------------------------------------------------------
-[ 2019-05-17T15:41:58+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.047471s] [吞吐率：21.07req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:41:58+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/links/lst.html
-[运行时间：0.080106s] [吞吐率：12.48req/s] [内存消耗：2,940.70kb] [文件加载：58]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'links',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\admin\controller\Links->lst[ D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Links.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\public/../application/admin\view\links\lst.html [ array (
-  0 => 'list',
-) ]
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.011753s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_links` [ RunTime:0.020632s ]
-[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_links` LIMIT 1 [ RunTime:0.000590s ]
-[ sql ] [ SQL ] SELECT * FROM `tp_links` LIMIT 0,5 [ RunTime:0.000474s ]
----------------------------------------------------------------
-[ 2019-05-17T15:41:59+08:00 ] 127.0.0.1 GET 127.0.0.1/Personal-Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
-[运行时间：0.091116s] [吞吐率：10.98req/s] [内存消耗：1,380.85kb] [文件加载：38]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'static',
-    1 => 'admin',
-    2 => 'fonts',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => '127.0.0.1',
-  'connection' => 'keep-alive',
-  'origin' => 'http://localhost',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => '*/*',
-  'referer' => 'http://127.0.0.1/Personal-Blog/public/static/admin/style/font-awesome.css',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-  'v' => '4.3.0',
-)
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:42:01+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/cate/lst.html
-[运行时间：0.023339s] [吞吐率：42.85req/s] [内存消耗：1,412.68kb] [文件加载：41]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'cate',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
-[ error ] [1]Class 'app\admin\controller\Base' not found[D:\phpstudy\PHPTutorial\WWW\Personal-Blog\application\admin\controller\Cate.php:6]
----------------------------------------------------------------
-[ 2019-05-17T15:43:18+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/cate/lst.html
-[运行时间：0.085517s] [吞吐率：11.69req/s] [内存消耗：1,854.72kb] [文件加载：49]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'cate',
-    2 => 'lst',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/links/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ SESSION ] INIT array (
-  'id' => '',
-  'var_session_id' => '',
-  'prefix' => 'think',
-  'type' => '',
-  'auto_start' => true,
-)
-[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\tpl\dispatch_jump.tpl [ array (
-  0 => 'code',
-  1 => 'msg',
-  2 => 'data',
-  3 => 'url',
-  4 => 'wait',
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2019-05-17T15:43:21+08:00 ] 0.0.0.0 GET localhost/Personal-Blog/public/admin/login/index.html
-[运行时间：0.025976s] [吞吐率：38.50req/s] [内存消耗：1,387.55kb] [文件加载：40]
-[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\Personal-Blog\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'admin',
-    1 => 'login',
-    2 => 'index',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'localhost',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36 115Browser/9.1.1',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-  'referer' => 'http://localhost/Personal-Blog/public/admin/cate/lst.html',
-  'accept-encoding' => 'gzip, deflate, br',
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'cookie' => 'PHPSESSID=nh2ppqrab24ofsv5q9gom7hij0',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ LOG ] INIT File
