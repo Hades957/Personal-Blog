@@ -13,6 +13,6 @@
 
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/../application/');
-define('SITE_URL', 'http://106.14.227.213/tp5');
+define('SITE_URL', 'http://zbifeng.com/blog');
 // 加载框架引导文件
 require __DIR__ . '/../thinkphp/start.php';

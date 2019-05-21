@@ -5,7 +5,7 @@ class Index extends Base
 {
     public function index()
     {
-    	$articleres=db('article')->order('id desc')->paginate(3);
+    	$articleres=db('article')->order('id desc')->paginate(8);
     	$this->assign('articleres',$articleres);
         return $this->fetch();
     }

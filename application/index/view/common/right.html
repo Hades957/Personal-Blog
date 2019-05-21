@@ -1,6 +1,6 @@
+
 <div class="thumbnail">
-	<div class="text-center"><h4><strong>热门点击</strong></h4>		
-	</div>
+	<div class="text-center"><h4><strong>热门点击</strong></h4></div>
 	<br>
 	<table class="table table-condensed table-striped table-hover">
 		{volist name="clickres" id="vo"}
@@ -11,29 +11,33 @@
 				</a>
 			</td>
 		</tr>
-		{/volist}
+		{/volist}		
 	</table>
 	<br>
-	<div class="text-center">
-		<h4><strong>推荐阅读</strong></h4>
-	</div>
+
+	<div class="text-center"><h4><strong>推荐阅读</strong></h4></div>
 	<br>
 	<table class="table table-condensed table-striped table-hover">
 		{volist name="tjres" id="vo"}
 		<tr class="warning">
 			<td class="text-center">
-				<a title="{$vo.title}" tatget="_blank" href="{:url('article/index',array('arid'=>$vo['id']))}"><span>{$vo.title}</span></a>
+				<a title="{$vo.title}" target="_blank" href="{:url('article/index',array('arid'=>$vo['id']))}">
+					<span>{$vo.title}</span>
+				</a>
 			</td>
 		</tr>
-		{/volist}
+		{/volist}		
 	</table>
 	<br>
+
+
 	<form target="_blank" method="get" action="{:url('Search/index')}">
 		<div class="input-group">
 			<input type="text" class="form-control" placeholder="Search for..." name="keywords">
 			<span class="input-group-btn">
-				<input class="btn btn-default" type="submit" value="Go!">
+			<input class="btn btn-default" type="submit" value="Go!">
 			</span>
 		</div>
 	</form>
+
 </div>

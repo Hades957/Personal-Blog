@@ -10,7 +10,7 @@ class Cate extends Base
     	$cates=db('cate')->find($cateid);
     	$this->assign('cates',$cates);
     	//查询当前栏目下的文章
-    	$articleres=db('article')->where(array('cateid'=>$cateid))->paginate(3);
+    	$articleres=db('article')->where(array('cateid'=>$cateid))->paginate(8);
     	$this->assign('articleres',$articleres);
         return $this->fetch('cate');
     }
