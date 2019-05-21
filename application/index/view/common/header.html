@@ -1,23 +1,37 @@
-<div class="ladytop">
-            <div class="nav">
-                <div class="left"><a href=""><img src="__PUBLIC__/images
-/hunshang.png" alt="wed114婚尚"></a></div>
-                <div class="right">
-                    <div class="box">
-                    <a href="{:url('index/index')}"  rel='dropmenu209'>首页</a> 
-                     {volist name="cateres" id="vo"}
-                        <a href="{:url('cate/index',array('cateid'=>$vo['id']))}"  rel='dropmenu209'>{$vo.catename}</a> 
-                     {/volist}
-                    </div>
-                </div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container" style="font-size: 23px;">
+        <div class="row">
+            <div class="navbar-header col-md-3">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="{:url('index/index')}">BEESITE</a>    
             </div>
+                <div id="navbar" class="navbar-collapse collapse row">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="{:url('index/index')}">首页</a>
+                        </li>
+                        {volist name="cateres" id="vo"}
+                        <li>
+                            <a href="{:url('cate/index',array('cateid'=>$vo['id']))}"></a>
+                        </li>
+                        {/volist}
+                        <li class="dropdown"> 
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="ture" aria-expanded="false">热门标签<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                {volist name="tagres" id="vo"}
+                                <li>
+                                    <a href='127.0.0.1/Personal-Blog/public/index.php/index/search/index?keywords={$vo.tagname}'></a>
+                                </li>
+                                {/volist}
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
         </div>
-
-<div class="hotmenu">
-	<div class="con">热门标签：
-    <a href="http://www.chuanke.com/s2260700.html" target="_blank" style="color:#f00;">ThinkPHP视频教程下载</a>
-    {volist name="tagres" id="vo"}
-    <a href='http://127.0.0.1/Personal-Blog/public/index.php/index/search/index?keywords={$vo.tagname}'>{$vo.tagname}</a>
-    {/volist}
     </div>
-</div>
+</nav>
