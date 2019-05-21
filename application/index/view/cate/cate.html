@@ -1,62 +1,70 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE>
+<html>
 <head>
-<title>个人博客</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="个人博客" />
-<meta name="description" content="个人博客" /> 
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<link href="__PUBLIC__/style/lady.css" type="text/css" rel="stylesheet" />
-<!-- <link href="http://www.topthink.com/Public/static/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" /> -->
-<script type='text/javascript' src='__PUBLIC__/style/ismobile.js'></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="个人博客" />
+	<meta name="description" content="个人博客" /> 
+	<!-- <link rel="icon" href="#"> -->	
+	<title>个人博客</title>
+	<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/style/docs.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <!--顶部通栏-->
+	{include file="common/header" /}
 
-        {include file="common/header" /}
+	<div class="container" style="margin-top: 153px; min-height: 100%">
+		<div class="row">
+			<div class="col-md-9">
 
-<!--顶部通栏-->
+				{volist name="articleres" id="vo"}					
+					<div class="row panel panel-success">
+						<div class="panel-heading text-center">
+							<a target="_blank" href="{:url('article/index',array('arid'=>$vo['id']))}" style="font-size: 25px;">{$vo.title}</a>
+							<div>发布时间：{$vo.time|date="Y-m-d",###}</div>
+						</div>
 
+						<div class="panel-body">
+							<div class="col-md-5">
+								<div>
+									<a target="_blank" href="20160920156216.html"><img class="img-responsive thumbnail" src="{if condition="$vo['pic'] neq ''"}__IMG__{$vo.pic}{else /}__PUBLIC__/images/error.png{/if}" alt="{$vo.title}"/></a>
+								</div>
+							</div>
 
-<div class="position"><a href="{:url('index/index')}">主页</a> > <a href="{:url('cate/index',array('cateid'=>$cates['id']))}">{$cates.catename}</a> >  </div>
+							<div class="col-md-7">								
+									<blockquote><p>{$vo.desc}</p></blockquote>
 
-<div class="overall">
+									<div>
+										<?php
+											$arr=explode(',', $vo['keywords']);
+											foreach ($arr as $k=>$v) {
+												echo "<span class='label label-info'><a href='http://127.0.0.1/Personal-Blog/public/index.php/index/search/index?keywords=$v' style='color: white'>$v</a></span>&nbsp;&nbsp;";
+											}
+										?>
+									</div>
 
-	<div class="left">
-				
-		{volist name="articleres" id="vo"}
-		<div class="xnews2">
-		<div class="pic"><a target="_blank" href="{:url('article/index',array('arid'=>$vo['id']))}">
-		<img src="{if condition="$vo['pic'] neq ''"}__IMG__{$vo.pic}{else /}__PUBLIC__/images/error.png{/if}" alt=""/>
-		</a></div>
-		<div class="dec">
-		<h3><a target="_blank" href="{:url('article/index',array('arid'=>$vo['id']))}">{$vo.title}</a></h3>
-		<div class="time">发布时间：{$vo['time']|date="Y-m-d",###}</div>
-		<p>{$vo.desc}</p>
-		<div class="time">
-		<?php
-			$arr=explode(',', $vo['keywords']);
-			foreach ($arr as $k=>$v) {
-				echo "<a href='http://127.0.0.1/tp5/public/index.php/index/search/index?keywords=$v'>$v</a>";
-			}
-		?>
-		</div>
-		</div>
-		</div>
-		{/volist}
+							</div>
+						</div>
+					</div>
 
-				
-				<div class="pages">
-				<div class="plist" >
-{$articleres->render()}
+				{/volist}				
+
+				<div class="pager">
+					{$articleres->render()}
 				</div>
-				</div>
+			</div>
+
+			<div class="col-sm-3">
+		      	{include file="common/right" /}
+		    </div>
+
+		</div>
 	</div>
-	
-	{include file="common/right" /}
-	
-</div>
-{include file="common/foot" /}
-
+	{include file="common/foot" /}
 </body>
 </html>
